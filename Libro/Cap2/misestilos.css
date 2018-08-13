@@ -1,0 +1,22 @@
+/*Selector Universal*/
+    *{margin: 2%;}  
+/*Estilo por nombre de etiqueta, no recomendado*/
+    h1  {text-align: center;}
+    h2  {text-align: right;}
+/*Estilo mediante id, viable*/ 
+    #horizontal70 {width: 70%}
+    #textoDerecha {font-size: 30px; text-align: right;}   
+    #textoCentro { font-size: 21px; text-align: center;}
+/*Estilo mediante clase, recomendado*/
+    .smallText {font-size: 11px;}
+    p.smallText {font-size: 15px; margin-top: 35%}
+    h1.verticalMargin{margin-top: 0px;margin-bottom: 0px;}
+/*Pseudoclases*/
+    p:nth-child(even){background: #355385}
+    p:nth-child(odd){background: #999999}
+    :not(h1, h2){text-align: justify}
+/*Nuevos selectores CSS3*/
+    p.mitexto6 + p {background-color: blueviolet} /*Toda etiqueta que sea inmediatamente precedida por una etiqueta 'p' y con el identificador 'mitexto6' será
+                                                    afectado*/
+    div > p.mitexto7 {background-color: aqua} /*"Toda etiqueta 'p' que sea hija de "div" será afectado"*/
+    p.mitexto7 ~ p {background-color: brown}
