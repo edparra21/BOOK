@@ -1,0 +1,121 @@
+/*Cap 3*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header, nav, section, aside, footer{
+    display: block;
+}
+
+body{
+    text-align: center;
+}
+
+/*Boxes*/
+#principal{
+    width: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid black;
+    background: #DDDDDD;
+
+    /*Crea curvatura en las esquinas*/
+    -moz-border-radius: 20px; /*up right down left*/
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+
+    /*Sombra en boxes*/
+    -moz-box-shadow: rgb(0,0,0) 5px 5px 20px inset; /*color x y radio tipo*/
+    -webkit-box-shadow: rgb(0,0,0) 5px 5px 20px inset;
+    box-shadow: rgb(0,0,0) 5px 5px 20px inset;
+
+    background: -webkit-linear-gradient(top, #FFFFFF, #006699);
+    background: -moz-linear-gradient(top, #FFFFFF, #006699);
+
+    outline: 2px dashed #000099;
+    outline-offset: 15px;
+
+    /*Imagen como borde*/
+    -moz-border-image: url('../resources/img/diamonds.png') 29 stretch;
+    -webkit-border-image: url('../resources/img/diamonds.png') 29 stretch;
+    border-image: url('../resources/img/diamonds.png') 29 stretch;
+
+    /*Transformaciones*/
+    
+    /* -moz-transform: scale(1.5); /* ejeX, ejeY
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg);
+
+    -moz-transform: translate(0px, 100px);
+    -webkit-transform: translate(0px, 100px);
+    transform: translate(0px, 100px); */
+/* 
+    -moz-transform: skew(20deg) translateY(100%);
+    -webkit-transform: skew(20deg) translateY(100%);
+    transform: skew(20deg) translateY(100%); */
+
+    /*Transiciones*/
+    -moz-transition: -moz-transform 0.5s ease-in-out 0.2s;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out 0.2s;
+    transition: transform 0.5s linear 0.2s;
+}#principal:hover{
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+#titulo{
+    font: bold 60px 'Bad Weather', verdana, sans-serif;
+    text-shadow: rgba(0, 0, 0,0.2) 3px 3px 5px; /*color x y radio */
+    color: hsla(245, 100%, 50%, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/*--------------Customized Fonts--------------*/
+@font-face{
+    font-family: 'Chicago 3D';
+    src: url('../fonts/Chicago3D.ttf');
+}
+@font-face{
+    font-family: 'Bad Weather';
+    src: url('../fonts/BadWeatherDemo.ttf');
+}
+@font-face{
+    font-family: 'Blackout';
+    src: url('../fonts/BLACKOUT.ttf');
+}
+@font-face{
+    font-family: 'Chicago';
+    src: url('../fonts/Chicago.ttf');
+}
+@font-face{
+    font-family: 'Chicago 3D Italic';
+    src: url('../fonts/Chicago3D-Italic');
+}
+@font-face{
+    font-family: 'Chicago 3D Bright Neon';
+    src: url('../fonts/ChicagoBrightNeon3D.ttf')
+}
+@font-face{
+    font-family: 'Chicago 3D Bright Neon Italic';
+    src: url('../fonts/ChicagoBrightNeon3D-Italic');
+}
+
